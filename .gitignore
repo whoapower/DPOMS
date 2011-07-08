@@ -1,0 +1,11 @@
+.DS_Store
+mkmf.log
+log
+coverage
+rdoc
+.bundle
+tmp
+db/*.sqlite3
+config/database.yml
+public/stylesheets/compiled/*
+public/system/*
