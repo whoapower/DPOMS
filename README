@@ -1,0 +1,14 @@
+DPOMS is an OEM tracking system for products that are developed, shipped out and to further track them through the field with various configurations with clients.
+
+Current Config:
+Fedora, msyql, rvm and greendog99's rails template as of June, 2011.
+Simple layout with all the current elements listed in a simple form.
+
+
+TO DO:
+Need to branch out several components for one to many / belongs to associations:
+- company
+- contacts
+- shipped versions needs to be expanded
+- current versions and update dates needs to be filled in.  this is critical and very possible since each version update is controlled and not left to the end user/client to perform.
+- add another field for system type (to support various hardware platforms)
