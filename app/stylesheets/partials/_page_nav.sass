@@ -1,0 +1,16 @@
+nav#page-nav
+  background-color: $base02
+  color: $base2
+  border-top: 1px solid $base03
+  border-bottom: 1px solid #fffff8
+  margin-top: 16px
+  margin-bottom: 16px
+  padding-top: 10px
+  padding-bottom: 10px
+  @include clearfix
+  +linear-gradient(color-stops($base01, $base02))
+  .menu
+    +grid-column(9)
+  .search
+    +grid-column(3)
+    text-align: right

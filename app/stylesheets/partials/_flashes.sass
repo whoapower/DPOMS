@@ -1,0 +1,36 @@
+//
+// Fancy boxes for Rails flash messages
+//
+
+$flash_notice_bg: #dff6ff
+$flash_notice_color: #2e52aa
+$flash_notice_border: #9bacb3
+
+$flash_alert_bg: #ffd8c5
+$flash_alert_color: #660000
+$flash_alert_border: #b39789
+
+#flash-messages
+  @include grid-row
+
+  .flash-message
+    // Offset column width to account for padding and border
+    @include grid-column(12, 24px)
+    padding: 10px
+    border: 2px solid
+    margin-bottom: 10px
+    +border-radius(12px)
+    font-family: serif
+    font-size: 123.1%
+
+  .notice
+    background-color: $flash_notice_bg
+    color: $flash_notice_color
+    border-color: $flash_notice_border
+    +linear-gradient(color-stops($flash_notice_bg + #111, $flash_notice_bg - #111))
+
+  .alert
+    background-color: $flash_alert_bg
+    color: $flash_alert_color
+    border-color: $flash_alert_border
+    +linear-gradient(color-stops($flash_alert_bg + #111, $flash_alert_bg - #111))
